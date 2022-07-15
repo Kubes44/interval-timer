@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interval Timer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;700;800&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Interval Timer</h1>
+        <div class="counters">
+            <div id="workCountCont" class="counter-container work-count">
+                <h3>WORK</h3>
+                <h1 id="workCount" class="count"></h1>
+            </div>
+            <div id="restCountCont" class="counter-container rest-count">
+                <h3>REST</h3>
+                <h1 id="restCount" class="count"></h1>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <p id="warning"></p>
+            <button id="start" class="btn start-btn">Start</button>
+            <button id="stop" class="btn stop-btn">Stop</button>
+            <button id="reset" class="btn reset-btn">Reset</button>
+        </div>
+        <div class="inputs">
+            <form id="form">
+                <div class="input-bars">
+                    <label class="input-label">
+                        Work
+                        <input  class="input"
+                                type="number" 
+                                name="workTimeInput" 
+                                id="workTimeInput" 
+                                value="10"
+                                onfocus="this.value=''"
+                                >
+                    </label>
+                    <label class="input-label">
+                        Rest
+                        <input  class="input"
+                                type="number" 
+                                name="restTimeInput" 
+                                id="restTimeInput" 
+                                value="5"
+                                onfocus="this.value=''"
+                                > 
+                    </label>
+                </div>
+                <button type="submit" id="update" class="btn update-btn">Update</button>
+            </form>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>

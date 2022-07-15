@@ -1,0 +1,156 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #4d908e;
+    font-family: 'Blinker', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 40px;
+    color: white;
+}
+
+.counters {
+    display: flex;
+    justify-content: center;
+}
+
+.counter-container {
+    text-align: center;
+    color: white;
+    border-radius: 35px;
+    width: 5rem;
+    padding: 2rem 5rem;
+    margin: 2rem;
+}
+
+.counter-container h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    margin-left: -100%;
+    margin-right: -100%;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 30px; 
+    color: white;   
+}
+
+.count {  
+    height: 6rem;
+}
+
+.work-count {
+    background: #f94144;
+}
+
+.rest-count {
+    background: #277da1;
+}
+
+.counting {
+    border: white 1rem solid;
+    padding: 1rem 4rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin: 0 2rem;
+    padding: .5em 2rem;
+    border-radius: 20px;
+    border: none;
+    color: #4d908e;
+    background: white;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.input-bars {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.input {
+    width: 4rem;
+    margin: 1rem 2rem;
+    background:#4d908e;
+    border: none;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Blinker', sans-serif;
+}
+::-webkit-input-placeholder {
+    color: #dee2e6;
+    font-size: 1.5rem;
+}
+
+
+.update-btn {
+    background: #4d908e;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    align-self: center;
+    width: fit-content;
+}
+
+.input-label {
+    color: #4d908e;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#form {
+    border-radius: 15px;
+    background: white;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.btn:hover,
+.btn:focus,
+.input:hover,
+.input:focus
+ {
+    background: #277da1;
+    color: white;
+}
+
+#warning {
+    display: none;
+    background: white;
+    color: #f94144;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
